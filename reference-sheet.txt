@@ -1,0 +1,936 @@
+# Moxfield API Fixture Reference
+
+Source: Moxfield responses captured in `test/moxfield/`.
+
+The JSON fixtures are retained as raw responses. This document records the fields and structures present in those responses for use when developing the extension and its parsers.
+
+## collection.json
+
+### Root object
+
+```text
+totalOverall
+totalCommon
+totalUncommon
+totalRare
+totalMythic
+totals
+totalPrices
+areTotalsPartial
+isEmpty
+pageNumber
+pageSize
+totalResults
+totalPages
+data
+```
+
+### Root fields
+
+```text
+totalOverall
+totalCommon
+totalUncommon
+totalRare
+totalMythic
+
+areTotalsPartial
+isEmpty
+
+pageNumber
+pageSize
+totalResults
+totalPages
+```
+
+`data` is an array containing the collection entries returned for the current page.
+
+The captured response has:
+
+```text
+pageNumber = 1
+pageSize = 50
+totalResults = 14953
+totalPages = 300
+```
+
+The collection totals report:
+
+```text
+totalOverall = 21383
+totalCommon = 9369
+totalUncommon = 5465
+totalRare = 5262
+totalMythic = 1279
+```
+
+### totalPrices
+
+```text
+totalPrices.usd
+totalPrices.usd_foil
+totalPrices.usd_etched
+
+totalPrices.eur
+totalPrices.eur_foil
+totalPrices.eur_etched
+
+totalPrices.tix
+
+totalPrices.ck
+totalPrices.ck_foil
+totalPrices.ck_etched
+totalPrices.ck_buy
+totalPrices.ck_buy_foil
+
+totalPrices.csi
+totalPrices.csi_foil
+totalPrices.csi_etched
+totalPrices.csi_buy
+totalPrices.csi_buy_foil
+totalPrices.csi_buy_etched
+
+totalPrices.ct
+totalPrices.ct_foil
+totalPrices.ct_etched
+
+totalPrices.f2f
+totalPrices.f2f_foil
+totalPrices.f2f_etched
+
+totalPrices.scg
+totalPrices.scg_foil
+totalPrices.scg_etched
+totalPrices.scg_buy
+totalPrices.scg_foil_buy
+totalPrices.scg_etched_buy
+
+totalPrices.mp
+totalPrices.mp_foil
+totalPrices.mp_etched
+
+totalPrices.lastUpdatedAtUtc
+```
+
+### Collection entry
+
+Each item in `data[]` contains:
+
+```text
+data[].id
+data[].quantity
+data[].condition
+data[].game
+data[].finish
+data[].isFoil
+data[].isAlter
+data[].isProxy
+data[].purchasePrice
+data[].isPrefPrinting
+data[].createdAtUtc
+data[].lastUpdatedAtUtc
+data[].rarity
+data[].language
+data[].tradeBinder
+data[].card
+```
+
+`purchasePrice` is present on some entries but not necessarily all entries.
+
+### data[].language
+
+```text
+data[].language.id
+data[].language.code
+data[].language.printedCode
+data[].language.name
+```
+
+Example values in the captured response:
+
+```text
+id = LD58x
+code = en
+printedCode = en
+name = English
+```
+
+### data[].tradeBinder
+
+```text
+data[].tradeBinder.id
+data[].tradeBinder.publicId
+data[].tradeBinder.name
+```
+
+`tradeBinder` can be absent/null for entries that are not associated with a trade binder.
+
+### data[].card
+
+Each collection entry contains a full card object.
+
+```text
+data[].card.id
+data[].card.uniqueCardId
+data[].card.scryfall_id
+
+data[].card.set
+data[].card.set_name
+data[].card.name
+data[].card.cn
+data[].card.layout
+
+data[].card.cmc
+data[].card.type
+data[].card.type_line
+data[].card.oracle_text
+data[].card.mana_cost
+data[].card.colors
+data[].card.color_indicator
+data[].card.color_identity
+
+data[].card.power
+data[].card.toughness
+data[].card.loyalty
+
+data[].card.legalities
+
+data[].card.frame
+data[].card.frame_effects
+data[].card.reserved
+data[].card.digital
+data[].card.foil
+data[].card.nonfoil
+data[].card.etched
+data[].card.glossy
+data[].card.rarity
+data[].card.border_color
+data[].card.colorshifted
+data[].card.flavor_text
+data[].card.lang
+data[].card.latest
+data[].card.has_multiple_editions
+data[].card.has_arena_legal
+
+data[].card.prices
+
+data[].card.card_faces
+data[].card.artist
+data[].card.promo_types
+
+data[].card.cardHoarderUrl
+data[].card.cardKingdomUrl
+data[].card.cardKingdomFoilUrl
+data[].card.cardMarketUrl
+data[].card.tcgPlayerUrl
+
+data[].card.isArenaLegal
+data[].card.released_at
+data[].card.edhrec_rank
+
+data[].card.multiverse_ids
+data[].card.cardmarket_id
+data[].card.mtgo_id
+data[].card.arena_id
+data[].card.tcgplayer_id
+data[].card.cardkingdom_id
+data[].card.cardkingdom_foil_id
+
+data[].card.reprint
+data[].card.set_type
+data[].card.coolStuffIncUrl
+data[].card.coolStuffIncFoilUrl
+data[].card.acorn
+data[].card.image_seq
+data[].card.cardTraderUrl
+data[].card.cardTraderFoilUrl
+data[].card.content_warning
+data[].card.starcitygames_sku
+data[].card.starcitygames_url
+data[].card.starcitygames_foil_sku
+data[].card.starcitygames_foil_url
+data[].card.isPauperCommander
+data[].card.isCovered
+data[].card.allRaritiesMask
+data[].card.manapool_url
+data[].card.providerPrices
+data[].card.isTemporary
+data[].card.isToken
+data[].card.defaultFinish
+```
+
+The `power`, `toughness`, and `loyalty` fields are card-type-dependent and therefore are not present on every card.
+
+### data[].card.legalities
+
+The captured card objects contain legality fields including:
+
+```text
+standard
+future
+historic
+timeless
+gladiator
+pioneer
+modern
+legacy
+pauper
+vintage
+penny
+commander
+oathbreaker
+standardbrawl
+brawl
+competitivebrawl
+alchemy
+paupercommander
+duel
+oldschool
+premodern
+predh
+tlr
+```
+
+### data[].card.prices
+
+Price fields appearing in the captured response include:
+
+```text
+usd
+usd_foil
+eur
+eur_foil
+tix
+ck
+ck_foil
+ck_buy
+ck_buy_foil
+ck_buy_qty
+ck_buy_foil_qty
+csi
+csi_foil
+csi_buy
+csi_buy_foil
+csi_buy_qty
+csi_buy_foil_qty
+ct
+ct_foil
+scg
+scg_foil
+scg_qty
+scg_foil_qty
+scg_buy
+scg_foil_buy
+mp
+mp_foil
+mp_qty
+lastUpdatedAtUtc
+```
+
+Not every price field exists for every card. Digital-only, foil-only, or otherwise specialized cards can have substantially fewer price fields.
+
+### data[].card.card_faces
+
+An array containing face-specific card data when applicable.
+
+For ordinary single-faced cards in the captured fixture this is generally:
+
+```text
+[]
+```
+
+### data[].card.providerPrices
+
+Provider-specific price data.
+
+The captured fixture includes:
+
+```text
+providerPrices.journeysend.nonFoil.retail
+providerPrices.journeysend.foil.retail
+```
+
+The contents should be treated as provider-dependent rather than assuming these are the only possible providers.
+
+---
+
+# public-deck.json
+
+## Root structure
+
+The response contains detailed information for a public Moxfield deck, including deck metadata and keyed collections of cards.
+
+The captured response contains normal deck-card entries such as:
+
+```text
+YMro6
+Yle5e
+YvQRq
+kpP31
+k7gOj
+YnWGv
+```
+
+These keys correspond to Moxfield card/deck-entry identifiers.
+
+There are also keyed card objects in the response that do not have the same complete deck-entry structure as the mainboard entries. For example:
+
+```text
+YoZ0V
+ErngM
+EPMq8
+```
+
+Therefore the parser should distinguish between:
+
+1. deck-card entries containing quantity/board information and a nested `card` object; and
+2. standalone card objects represented directly by their card fields.
+
+## Deck-card entry
+
+A normal deck-card entry contains:
+
+```text
+[entry].quantity
+[entry].boardType
+[entry].finish
+[entry].isFoil
+[entry].isAlter
+[entry].isProxy
+[entry].card
+[entry].useCmcOverride
+[entry].useManaCostOverride
+[entry].useColorIdentityOverride
+[entry].excludedFromColor
+```
+
+### [entry].card
+
+The nested card object uses the same general card schema found in `collection.json`:
+
+```text
+[entry].card.id
+[entry].card.uniqueCardId
+[entry].card.scryfall_id
+
+[entry].card.set
+[entry].card.set_name
+[entry].card.name
+[entry].card.cn
+[entry].card.layout
+
+[entry].card.cmc
+[entry].card.type
+[entry].card.type_line
+[entry].card.oracle_text
+[entry].card.mana_cost
+[entry].card.colors
+[entry].card.color_indicator
+[entry].card.color_identity
+
+[entry].card.power
+[entry].card.toughness
+[entry].card.loyalty
+
+[entry].card.legalities
+
+[entry].card.frame
+[entry].card.frame_effects
+[entry].card.reserved
+[entry].card.digital
+[entry].card.foil
+[entry].card.nonfoil
+[entry].card.etched
+[entry].card.glossy
+[entry].card.rarity
+[entry].card.border_color
+[entry].card.colorshifted
+[entry].card.flavor_text
+[entry].card.lang
+[entry].card.latest
+[entry].card.has_multiple_editions
+[entry].card.has_arena_legal
+
+[entry].card.prices
+
+[entry].card.card_faces
+[entry].card.artist
+[entry].card.promo_types
+
+[entry].card.cardHoarderUrl
+[entry].card.cardKingdomUrl
+[entry].card.cardKingdomFoilUrl
+[entry].card.cardMarketUrl
+[entry].card.tcgPlayerUrl
+
+[entry].card.isArenaLegal
+[entry].card.released_at
+[entry].card.edhrec_rank
+
+[entry].card.multiverse_ids
+[entry].card.cardmarket_id
+[entry].card.mtgo_id
+[entry].card.arena_id
+[entry].card.tcgplayer_id
+[entry].card.cardkingdom_id
+[entry].card.cardkingdom_foil_id
+
+[entry].card.reprint
+[entry].card.set_type
+[entry].card.coolStuffIncUrl
+[entry].card.coolStuffIncFoilUrl
+[entry].card.acorn
+[entry].card.image_seq
+[entry].card.cardTraderUrl
+[entry].card.cardTraderFoilUrl
+[entry].card.content_warning
+[entry].card.starcitygames_sku
+[entry].card.starcitygames_url
+[entry].card.starcitygames_foil_sku
+[entry].card.starcitygames_foil_url
+[entry].card.isPauperCommander
+[entry].card.isCovered
+[entry].card.allRaritiesMask
+[entry].card.manapool_url
+[entry].card.providerPrices
+[entry].card.isTemporary
+[entry].card.isToken
+[entry].card.defaultFinish
+```
+
+## Deck-specific fields
+
+```text
+[entry].quantity
+[entry].boardType
+[entry].finish
+[entry].isFoil
+[entry].isAlter
+[entry].isProxy
+```
+
+The captured mainboard entries use:
+
+```text
+boardType = mainboard
+```
+
+but the parser should not assume that `mainboard` is the only possible value.
+
+## Deck overrides
+
+```text
+[entry].useCmcOverride
+[entry].useManaCostOverride
+[entry].useColorIdentityOverride
+[entry].excludedFromColor
+```
+
+These are Moxfield deck-specific values and should be preserved when normalizing deck data.
+
+## Standalone card objects
+
+The response also contains keyed card objects that have the card schema directly rather than being wrapped in a deck-entry object.
+
+Example structure:
+
+```text
+[key].id
+[key].uniqueCardId
+[key].scryfall_id
+[key].set
+[key].set_name
+[key].name
+[key].cn
+[key].layout
+[key].cmc
+[key].type
+[key].type_line
+[key].oracle_text
+[key].mana_cost
+[key].colors
+[key].color_indicator
+[key].color_identity
+...
+```
+
+The captured response includes examples involving cards/tokens such as:
+
+```text
+Hangarback Assembler
+Snake
+Szat's Will
+```
+
+These should not automatically be interpreted as owned cards or deck cards merely because they occur in the response.
+
+---
+
+# decks.json
+
+`decks.json` is a one-line JSON response in the captured fixture.
+
+Its purpose is to provide the user's deck collection/listing rather than the full card contents of an individual deck.
+
+The response should therefore be treated as the source for identifying decks and obtaining their associated metadata/identifiers.
+
+The detailed contents of a selected deck are represented by the corresponding public-deck response.
+
+The exact field inventory should be generated from the parsed JSON rather than inferred from the filename or from `public-deck.json`.
+
+---
+
+# Common card fields
+
+The card objects in `collection.json` and the nested card objects in `public-deck.json` share a common schema.
+
+## Identity
+
+```text
+id
+uniqueCardId
+scryfall_id
+```
+
+## Set and printing
+
+```text
+set
+set_name
+cn
+layout
+released_at
+set_type
+reprint
+latest
+has_multiple_editions
+```
+
+## Card characteristics
+
+```text
+name
+cmc
+type
+type_line
+oracle_text
+mana_cost
+colors
+color_indicator
+color_identity
+power
+toughness
+loyalty
+```
+
+## Legality
+
+```text
+legalities
+```
+
+with:
+
+```text
+standard
+future
+historic
+timeless
+gladiator
+pioneer
+modern
+legacy
+pauper
+vintage
+penny
+commander
+oathbreaker
+standardbrawl
+brawl
+competitivebrawl
+alchemy
+paupercommander
+duel
+oldschool
+premodern
+predh
+tlr
+```
+
+## Printing attributes
+
+```text
+frame
+frame_effects
+reserved
+digital
+foil
+nonfoil
+etched
+glossy
+rarity
+border_color
+colorshifted
+flavor_text
+lang
+```
+
+## Availability
+
+```text
+has_arena_legal
+isArenaLegal
+isPauperCommander
+isCovered
+isTemporary
+isToken
+```
+
+## External identifiers
+
+```text
+multiverse_ids
+cardmarket_id
+mtgo_id
+arena_id
+tcgplayer_id
+cardkingdom_id
+cardkingdom_foil_id
+```
+
+## External URLs
+
+```text
+cardHoarderUrl
+cardKingdomUrl
+cardKingdomFoilUrl
+cardMarketUrl
+tcgPlayerUrl
+coolStuffIncUrl
+coolStuffIncFoilUrl
+cardTraderUrl
+cardTraderFoilUrl
+manapool_url
+starcitygames_url
+starcitygames_foil_url
+```
+
+## External SKU fields
+
+```text
+starcitygames_sku
+starcitygames_foil_sku
+```
+
+## Image / artist / promotional data
+
+```text
+image_seq
+artist
+promo_types
+card_faces
+content_warning
+acorn
+allRaritiesMask
+```
+
+## Prices
+
+```text
+prices
+```
+
+Price fields vary by card and finish.
+
+## Provider prices
+
+```text
+providerPrices
+```
+
+The structure is provider-specific.
+
+---
+
+# Collection-specific data
+
+The following fields describe the user's particular physical/digital copy rather than the underlying card:
+
+```text
+id
+quantity
+condition
+game
+finish
+isFoil
+isAlter
+isProxy
+purchasePrice
+isPrefPrinting
+createdAtUtc
+lastUpdatedAtUtc
+rarity
+language
+tradeBinder
+```
+
+These fields should not be conflated with the fields under `data[].card`, which describe the card/printing itself.
+
+For example:
+
+```text
+data[].quantity
+```
+
+is the quantity owned in that collection entry.
+
+By contrast:
+
+```text
+data[].card.name
+```
+
+is the name of the card represented by that entry.
+
+---
+
+# Deck-specific data
+
+The following fields describe the card's role/printing in the deck:
+
+```text
+quantity
+boardType
+finish
+isFoil
+isAlter
+isProxy
+useCmcOverride
+useManaCostOverride
+useColorIdentityOverride
+excludedFromColor
+```
+
+The nested `card` object describes the actual card/printing.
+
+---
+
+# Recommended normalized representation
+
+The extension should eventually convert collection and deck responses into a common internal representation.
+
+A normalized card record should be based on the data actually needed by the extension rather than reproducing the entire Moxfield object.
+
+Suggested fields:
+
+```text
+name
+scryfallId
+moxfieldCardId
+uniqueCardId
+
+set
+setName
+collectorNumber
+
+cmc
+manaCost
+type
+typeLine
+oracleText
+colors
+colorIdentity
+
+power
+toughness
+loyalty
+
+quantity
+
+condition
+game
+finish
+isFoil
+isAlter
+isProxy
+isPrefPrinting
+
+boardType
+
+tradeBinder
+
+useCmcOverride
+useManaCostOverride
+useColorIdentityOverride
+excludedFromColor
+```
+
+The raw Moxfield object should remain available to the parser/test fixture even if only a subset of its fields is normalized.
+
+---
+
+# Important distinctions
+
+`collection.json` answers:
+
+```text
+What cards does the user own?
+How many copies?
+Which printing?
+Which condition?
+Which finish?
+Is it foil/altered/proxy?
+Is it in a trade binder?
+```
+
+`decks.json` answers:
+
+```text
+What decks does the user have?
+```
+
+`public-deck.json` answers:
+
+```text
+What cards/objects are associated with a particular public deck?
+How many copies?
+Which board?
+Which printing?
+What Moxfield-specific deck overrides apply?
+```
+
+The card object embedded in these responses supplies:
+
+```text
+What card/printing is this?
+What is its Scryfall ID?
+What set/collector number?
+What are its rules and characteristics?
+What are its legality, price, and external-market data?
+```
+
+The extension should therefore treat:
+
+```text
+collection entry
+```
+
+and:
+
+```text
+deck entry
+```
+
+as different types of records that happen to contain a common underlying card object.
+
+---
+
+# Fixture handling
+
+The files in this directory are raw captured Moxfield responses.
+
+They should not be manually reduced to only the fields currently used by the extension.
+
+When the extension needs additional Moxfield data, the existing fixtures should be inspected first to determine whether that data is already available.
+
+If a required response structure is not represented by the existing fixtures, capture the corresponding Moxfield network response and add it as a new fixture.
