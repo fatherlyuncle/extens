@@ -1,0 +1,494 @@
+{
+  "name": "Siegfried, Famed Swordsman",
+  "format": "commander",
+  "commander": [
+    {
+      "name": "Siegfried, Famed Swordsman",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "69dadb0c-413e-4658-9cdc-23a65df7a800"
+    }
+  ],
+  "mainboard": [
+    {
+      "name": "Access Tunnel",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "4bef5957-71a4-4fe0-b2ce-dff8e8690bd9"
+    },
+    {
+      "name": "Akuta, Born of Ash",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "08730b49-e51e-4868-9cc8-4ddc4a1dce4c"
+    },
+    {
+      "name": "Aphotic Wisps",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "9c3c09b4-5f81-43cb-afc9-2a6294b2b12f"
+    },
+    {
+      "name": "Arcane Signet",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "049ca0ff-0ca4-44f7-b144-731cf453afa9"
+    },
+    {
+      "name": "Avenger of the Fallen",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "d5397366-151f-46b0-b9b2-fa4d5bd892d8"
+    },
+    {
+      "name": "Bile Urchin",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "801c2b46-c7a7-44d6-ae38-5d34bf00c404"
+    },
+    {
+      "name": "Blight Titan",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "e00c55f4-676f-40dc-a7f7-a53f07dd3107"
+    },
+    {
+      "name": "Bloodghast",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "dfc068c5-b545-44b7-ac62-d7a3014c85e2"
+    },
+    {
+      "name": "Buried Alive",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "76878b19-2916-4f3f-bee5-20846bc9e2db"
+    },
+    {
+      "name": "Call of the Death-Dweller",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "37e34017-0aeb-4a93-9edf-596bf3597a0e"
+    },
+    {
+      "name": "Case of the Stashed Skeleton",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "4b120cbe-f0af-46c5-863f-03ecadf0435c"
+    },
+    {
+      "name": "Cruel Deceiver",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "7cc6972a-5305-423f-a936-16ee0fbf9200"
+    },
+    {
+      "name": "Crypt of Agadeem",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "18adafe6-de67-4101-8b39-b53ab695ec4a"
+    },
+    {
+      "name": "Dark Ritual",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "48cb9467-657e-453f-afc8-1bf7121570ad"
+    },
+    {
+      "name": "Darksteel Plate",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "49277723-84df-4842-a8e5-cdf1c1aa8161"
+    },
+    {
+      "name": "Deadly Dispute",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "b22ef77b-67a3-45d3-9d18-12b7b124cbf4"
+    },
+    {
+      "name": "Deathknell Kami",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "09535c14-ae50-4528-b9db-7eacee14e3fa"
+    },
+    {
+      "name": "Desperate Measures",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "ccbc6fd0-42bc-4e8b-96bc-69a631ba7106"
+    },
+    {
+      "name": "Diresight",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "144d5261-ee05-4b7f-ba9d-68aefbdab48e"
+    },
+    {
+      "name": "Disowned Ancestor",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "2d8bd496-632d-4d6d-a529-f35cf3222de7"
+    },
+    {
+      "name": "Echo of Dusk",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "319a457c-89b7-47f6-a13c-20bb50d41138"
+    },
+    {
+      "name": "Eerie Soultender",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "335f3146-743c-4a25-86b5-c45e9c66eb15"
+    },
+    {
+      "name": "Entomb",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "750820a5-b03f-46ee-970a-b66845176853"
+    },
+    {
+      "name": "Entropic Specter",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "bdb04d81-b0ab-4bc7-935d-c31005887240"
+    },
+    {
+      "name": "Evolving Wilds",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "4fd49258-f7cd-4902-a17f-9a195958fc13"
+    },
+    {
+      "name": "Farbog Revenant",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "0f6de332-debb-49f3-8b29-1719060ab00c"
+    },
+    {
+      "name": "Final Parting",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "de8803f6-9efa-4323-b8c5-29bdd5a48f9a"
+    },
+    {
+      "name": "Footsteps of the Goryo",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "9e940b0f-90bd-46b3-96b4-f1ec9cf03fe2"
+    },
+    {
+      "name": "Ghost-Lit Stalker",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "11ebf169-7268-4cda-b513-6063d64a60b5"
+    },
+    {
+      "name": "Ghoul's Feast",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "a2909e6e-d196-4654-9193-2c9e0cfd90ee"
+    },
+    {
+      "name": "Graveblade Marauder",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "a6e62471-07bf-48af-8868-b8a72032a50b"
+    },
+    {
+      "name": "Greed",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "851f8d1f-163c-4c4f-beee-431b64ec8a99"
+    },
+    {
+      "name": "Hateful Eidolon",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "812d0f15-f738-4644-9d29-2589d7e66915"
+    },
+    {
+      "name": "Iname, Death Aspect",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "2dd67e11-3dad-4e59-b15d-02911e53fbbf"
+    },
+    {
+      "name": "Junji, the Midnight Sky",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "e9ff50c0-915e-4055-a595-3df6be8f1e1b"
+    },
+    {
+      "name": "Key to the City",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "df087751-b8bf-4db0-a571-fb32f596fc2e"
+    },
+    {
+      "name": "Lightning Greaves",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "caba0b46-4ffd-476a-839a-625aa988f67b"
+    },
+    {
+      "name": "Lingering Tormentor",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "f5165880-9727-4f52-9633-fd5cecce7f01"
+    },
+    {
+      "name": "Mausoleum Secrets",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "26f7cf38-78cc-4139-9f2a-4dd0be7d9da8"
+    },
+    {
+      "name": "Myriad Landscape",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "1577b698-f2e7-448d-b8a8-3d2329dd3f46"
+    },
+    {
+      "name": "Nether Traitor",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "911d2271-8998-4193-9d1a-1768c5dfaaad"
+    },
+    {
+      "name": "Nighthowler",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "0349784a-1d2f-4cc9-8460-6576d84f12fe"
+    },
+    {
+      "name": "Pale Rider of Trostad",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "8dad70b8-0dec-4634-a31a-b78438a313a2"
+    },
+    {
+      "name": "Pestilent Spirit",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "5f9a0387-5116-484b-bb2b-064bd42e7fff"
+    },
+    {
+      "name": "Peter Parker's Camera",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "47875dff-c046-4cb0-b1e3-f926cbe25b59"
+    },
+    {
+      "name": "Phyrexian Tower",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "05b2cc68-1d20-421f-9800-af0996071554"
+    },
+    {
+      "name": "Psychic Paper",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "eae12c61-0125-4810-b0e4-139c27b1b08b"
+    },
+    {
+      "name": "Pus Kami",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "4f142dea-4751-453f-93a5-c8fdaba8a1b3"
+    },
+    {
+      "name": "Revenant",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "c7c6dbe5-3375-42c2-88f5-8ead0dc2b094"
+    },
+    {
+      "name": "Rogue's Passage",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "58f4384e-9aca-4533-8714-3dcaf709dee3"
+    },
+    {
+      "name": "Season of Loss",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "cc540652-916b-45c5-ae5a-0a0bc557cee1"
+    },
+    {
+      "name": "Silver Shroud Costume",
+      "quantity": 1,
+      "finish": "foil",
+      "scryfall_id": "49c85e36-de89-4fc0-8058-1eb5bf319c2d"
+    },
+    {
+      "name": "Skullclamp",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "97b729d3-5965-4e16-a50a-1e9bf51a9f13"
+    },
+    {
+      "name": "Smoke Bomb",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "4330d8ce-3b82-4297-ad5f-c63b54b6665a"
+    },
+    {
+      "name": "Sol Ring",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "14dbce79-1fcc-4cc9-bf38-7729e44a411e"
+    },
+    {
+      "name": "Soldevi Adnate",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "8b2651b0-1ab2-4d7e-834f-7505797da474"
+    },
+    {
+      "name": "Songs of the Damned",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "6cff3547-8c72-439a-91fe-ebe729dab748"
+    },
+    {
+      "name": "Soul Exchange",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "9f73597d-f453-4d37-b2ef-c54ef683a884"
+    },
+    {
+      "name": "Souls of the Lost",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "b5c6f502-f11f-4e41-beb8-0843432fa431"
+    },
+    {
+      "name": "Soulshriek",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "5c3bf717-2b88-4704-a7e9-f62dbb3d3d3d"
+    },
+    {
+      "name": "Spectral Snatcher",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "68f90f57-94a0-4ee1-9383-093e8fca52ea"
+    },
+    {
+      "name": "Spirit of Malevolence",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "cf3765b7-11e2-4837-b5e5-ca24adc0e33c"
+    },
+    {
+      "name": "Spirit of the Night",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "845c4b06-090f-4217-acb2-8900b7dab37c"
+    },
+    {
+      "name": "Starving Revenant",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "f25ea466-eb48-4c4c-b5d4-35f58e46ebe1"
+    },
+    {
+      "name": "Stitch Together",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "73f1aa13-b3bc-480e-826c-6bded7ee1ca6"
+    },
+    {
+      "name": "Swamp",
+      "quantity": 20,
+      "finish": "nonFoil",
+      "scryfall_id": "8747d2d5-1977-4ab7-bd90-aa9a0ab25297"
+    },
+    {
+      "name": "Terrain Generator",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "97b4d936-a7d6-4d43-87b5-0378f57e9e61"
+    },
+    {
+      "name": "The Black Gate",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "46418186-c215-47c4-9d0a-d15a1d8ca613"
+    },
+    {
+      "name": "The Soul Stone",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "1982f910-a9bd-4e94-a187-84381b22aacc"
+    },
+    {
+      "name": "Thief of Hope",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "48304e24-9c74-4726-95ae-3b1a356f5998"
+    },
+    {
+      "name": "Tormented Soul",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "87810963-9c62-4ff2-b33b-51fcc1b628ac"
+    },
+    {
+      "name": "Urborg Scavengers",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "795222e3-1352-4adb-8a42-dde43d08e413"
+    },
+    {
+      "name": "Urza's Cave",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "926916ed-2f22-4ba9-9427-194886ad6c1e"
+    },
+    {
+      "name": "Valgavoth's Faithful",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "25ef0c5b-4bcf-435f-b9bb-c8175c7b4257"
+    },
+    {
+      "name": "Village Rites",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "40a27914-5e4f-48d4-ba2a-9d3187a39606"
+    },
+    {
+      "name": "Wake the Dead",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "e1780be8-26f6-4f33-9bc6-ecafc3751c8e"
+    },
+    {
+      "name": "Wicked Akuba",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "c3172965-6057-472f-9712-1dd23d25d1a7"
+    },
+    {
+      "name": "Will-o'-the-Wisp",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "6ea0b7f7-06cf-4cc8-80f7-0d2c9194fef9"
+    },
+    {
+      "name": "Wishclaw Talisman",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "69d0f5bd-ccea-49b2-bd79-ad5e4d850cf5"
+    },
+    {
+      "name": "You Are Already Dead",
+      "quantity": 1,
+      "finish": "nonFoil",
+      "scryfall_id": "979b655f-822b-4415-94e0-bb20a8c312f6"
+    }
+  ]
+}
