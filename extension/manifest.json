@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Moxfield Deck-Cost Assistant (dev proof)",
+  "version": "0.2.0",
+  "description": "Fetches a live Moxfield deck and calculates missing-card cost against a bundled collection snapshot, using the same engine verified in this project's test suite.",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://moxfield.com/decks/*",
+        "https://www.moxfield.com/decks/*"
+      ],
+      "js": ["engine.bundle.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "host_permissions": [
+    "https://api2.moxfield.com/*"
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["data/collection_normalized.json"],
+      "matches": [
+        "https://moxfield.com/*",
+        "https://www.moxfield.com/*"
+      ]
+    }
+  ]
+}

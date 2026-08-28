@@ -1,0 +1,10 @@
+{
+  "name": "moxfield-deckcost-engine",
+  "private": true,
+  "scripts": {
+    "build:extension": "esbuild src/engine_js/browser-entry.js --bundle --outfile=extension/engine.bundle.js --format=iife --global-name=MoxfieldEngine --platform=browser"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
